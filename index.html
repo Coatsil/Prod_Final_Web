@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión/Registro.</title>
+    <link rel="stylesheet" href="style-login.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<header>
+    <section class="logo">
+        <a class="logobar" href="../Index/index.html">
+            <img src="bimbo.gif" alt="Logo de la Institución.">
+        </a>
+    </section>
+</header>
+
+<body>
+
+    <div class="wrapper">
+        
+        <span class="bg-animado"></span>
+        <span class="bg-animado2"></span>
+
+        <div class="form-box login">
+            <h2 class="animacion" style="--i:0; --j:21;">Iniciar Sesión.</h2>
+            <form action="iniciar.php" method="post">
+                <div class="input-box animacion" style="--i:1; --j:22;">
+                    <input type="text" name="usuario" required>
+                    <label>Usuario:</label>
+                    <box-icon type='solid' name='user-rectangle' class="box-icon"></box-icon>
+                </div>
+                <div class="input-box animacion" style="--i:2; --j:23;">
+                    <input type="password" name="contrasena" required>
+                    <label>Contraseña:</label>
+                    <box-icon type='solid' name='lock-alt' class="box-icon"></box-icon>
+                </div>
+                <button type="submit" class="boton animacion" style="--i:3; --j:24;"><a href="menu.html">Iniciar Sesión.</a></button>
+            </form>
+        </div>
+        
+        <div class="info-text login">
+            <h2 class="animacion" style="--i:0; --j:20;">¡Bienvenido de vuelta!</h2>
+            <p class="animacion" style="--i:1; --j:21;">Es un gusto tenerte <br>de vuelta con nosotros.</p>
+        </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
